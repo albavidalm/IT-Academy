@@ -93,7 +93,7 @@
   height: 1.563rem;
   background-color: #1e6caf;
 }
-.main-item1 {
+.main-item {
   margin-bottom: 0.75rem;
 }
 .main-item-wide {
@@ -125,4 +125,27 @@
   background-color: #e4a434;
   height: 1.563rem;
   margin: 0 auto;
+}
+
+/* MEDIAQUERIES -----------*/
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .main {
+    height: auto;
+    flex-direction: column;
+    background-color: yellow;
+  }
+  .main__section {
+    width: 100%;
+    margin-bottom: 1.25rem;
+  }
+  .aside {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .aside-item2 {
+    margin-bottom: 0;
+  }
 }
