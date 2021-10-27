@@ -1,0 +1,32 @@
+.page {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+.container {
+  width: 100%;
+  padding: 0 1.25rem;
+}
+
+.area {
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.header {
+  height: 100%;
+  width: 100%;
+  background-color: aqua;
+}
+
+.logo {
+  width: 30%;
+}
+
+.nav {
+  font-family: "Roboto", sans-serif;
+  background-color: beige;
+}
+.hero {
+  background-color: coral;
+}
