@@ -60,7 +60,6 @@ ul {
 }
 .nav__link:hover {
   color: #ee7463;
-
   transition: all 0.4s ease 0.1s;
 }
 
@@ -113,4 +112,48 @@ ul {
   text-align: center;
   letter-spacing: 0.1rem;
   color: #ee7363ca;
+}
+
+/* TABLET ========================================*/
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .nav {
+    flex-direction: row;
+    z-index: 10;
+  }
+  .nav__logo {
+    max-width: 7%;
+    flex-grow: 1;
+    margin-right: 1.25rem;
+  }
+  .nav__ul {
+    width: 100%;
+    flex-direction: row;
+    flex-grow: 3;
+    font-size: 0.7rem;
+    padding-top: 0;
+    justify-content: space-evenly;
+  }
+  .nav__li {
+    margin: 0 10px;
+    width: auto;
+  }
+  .fontaw {
+    margin-right: 0.02rem;
+  }
+  .nav__rrss {
+    width: auto;
+    margin-left: 1.25rem;
+    flex-grow: 1;
+    font-size: 0.8rem;
+    justify-content: flex-end;
+  }
+  .nav__rrss--item {
+    margin: 0 5px;
+  }
+  .hero {
+    top: -90px;
+  }
+  .hero__title {
+    top: 70%;
+  }
 }
