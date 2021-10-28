@@ -12,32 +12,56 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Condensed&family=Roboto:wght@300&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/f2e0e49a34.js" crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
 </head>
 
 <body class="page">
 
   <div class="container">
+
     <header class="area header">
+
       <nav class="nav">
-        <div class="logo"><img src="./images/logo.png" alt=""></div>
-        <ul>
-          <li class="nav__item">Inicio</li>
-          <li class="nav__item">Rutas</li>
-          <li class="nav__item">Hoteles</li>
-          <li class="nav__item">Vuelos</li>
-          <li class="nav__item">Contacto</li>
+
+        <div class="nav__logo"><img src="./images/logo.png" alt=""></div>
+
+        <ul class="nav__ul">
+          <li class="nav__li">
+            <a class="nav__link" href="#">
+              <span class="fontaw"><i class="fas fa-home"></i></span>Inicio
+            </a>
+          </li>
+          <li class="nav__li">
+            <a class="nav__link" href="#">
+              <span class="fontaw"><i class="fas fa-map-marked-alt"></i></span>Rutas
+            </a>
+          </li>
+          <li class="nav__li"><a class="nav__link" href="#">
+              <span class="fontaw"><i class="fas fa-h-square"></span></i>Hoteles
+            </a></li>
+          <li class="nav__li">
+            <a class="nav__link" href="">
+              <span class="fontaw"><i class="fas fa-plane">
+                </i></span>Vuelos
+            </a>
+          </li>
+          <li class="nav__li">
+            <a class="nav__link" href="">
+              <span class="fontaw"><i class="fas fa-envelope-open-text"></i></span>Contacto
+            </a>
+          </li>
         </ul>
-        <div class="rrss">
-          <ul>
-            <li class="rrss__item">Facebook</li>
-            <li class="rrss__item">Twitter</li>
-          </ul>
-        </div>
+
+
+        <ul class="nav__rrss">
+          <li class="nav__rrss--item"><a class="nav__link" href=""><i class="fab fa-facebook-square"></i></a></li>
+          <li class="nav__rrss--item"><a class="nav__link" href=""><i class="fab fa-twitter"></i></a></li>
+        </ul>
+
       </nav>
       <div class="hero">
-        <h1 class="title">"Disfruta de la experiencia de otros viajeros"</h1>
-        <img src="./images/header.webp" alt="Puerta del Sol en Japón">
+        <h1 class="hero__title">"Disfruta de la experiencia de otros viajeros"</h1>
+        <img class="hero__img" src="./images/header.webp" alt="Puerta del Sol en Japón">
       </div>
     </header>
     <footer class="footer"></footer>

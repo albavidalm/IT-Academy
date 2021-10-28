@@ -3,6 +3,11 @@
   height: 100vh;
   overflow-x: hidden;
 }
+ul {
+  padding: 0;
+}
+
+/* MOBILE FIRST ========================================*/
 .container {
   width: 100%;
   padding: 0 1.25rem;
@@ -13,20 +18,99 @@
   margin-bottom: 1.25rem;
 }
 
+/* HEADER ------------------------*/
+
 .header {
   height: 100%;
   width: 100%;
-  background-color: aqua;
-}
-
-.logo {
-  width: 30%;
+  display: flex;
+  flex-direction: column;
+  color: #808080;
+  /* background-color: aqua; */
 }
 
 .nav {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   font-family: "Roboto", sans-serif;
-  background-color: beige;
+  /* background-color: beige; */
 }
+
+.nav__logo {
+  width: 30%;
+}
+
+.nav__ul {
+  width: 30%;
+  height: 100%;
+  padding-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.nav__link,
+.nav__link:visited {
+  text-decoration: none;
+  color: #808080;
+}
+.nav__link:hover {
+  color: #ee7463;
+
+  transition: all 0.4s ease 0.1s;
+}
+
+.nav__li {
+  margin-bottom: 0.4rem;
+  height: 100%;
+  width: 100%;
+}
+.nav__li:hover {
+  transform: scale(1.1);
+  transition: all 0.4s ease 0.1s;
+}
+.fontaw {
+  text-align: center;
+  display: inline-block;
+  width: 1.25rem;
+  height: 100%;
+  margin-right: 0.2rem;
+}
+
+.nav__rrss {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.nav__rrss--item:hover {
+  color: #ee7463;
+  transform: scale(1.2);
+  transition: all 0.4s ease 0.1s;
+}
+
+/* HERO ------------------------*/
+
 .hero {
-  background-color: coral;
+  height: 100%;
+  width: 100%;
+  /* background-color: rgb(159, 80, 255); */
+  position: relative;
+}
+
+.hero__title {
+  height: 40%;
+  width: 100%;
+  position: absolute;
+  top: 1.5rem;
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  color: #ee7363ca;
 }
