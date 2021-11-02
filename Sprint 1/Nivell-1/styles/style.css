@@ -1,108 +1,80 @@
 .page {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  padding: 20px;
 }
 .container {
-  height: 100vh;
   max-width: 1200px;
   margin: 0 auto;
+}
+.minipadding {
+  padding: 1rem;
 }
 
 .header {
   background-color: #000;
   width: 100%;
-  height: auto;
-  padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
 .nav {
   background-color: #2d4059;
-
-  height: 100%;
-  padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
-.logo {
+.item {
   background-color: #ea5455;
-  width: 100%;
-  height: 20px;
-  margin-bottom: 20px;
+  height: 1rem;
+  margin-bottom: 1rem;
 }
-.menu {
-  background-color: #ea5455;
-  width: 100%;
-  height: 20px;
-  margin-bottom: 20px;
-}
-.social {
-  background-color: #ea5455;
-  width: 100%;
-  height: 20px;
+.item:last-child {
+  margin-bottom: 0;
 }
 .hero {
-  height: 100%;
-  padding: 20px;
   background-color: #f07b3e;
 }
 .hero__title {
   background-color: #fed45f;
-  height: 20px;
+  height: 1rem;
   margin: 0;
 }
 
 .main {
   background-color: #fee227;
-  width: 100%;
-  height: auto;
-  padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
-
 .articles {
   background-color: #0a506f;
-  height: 100%;
-  padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
 .article {
   background-color: #60959c;
-  height: 20px;
-  margin-bottom: 20px;
+  height: 1rem;
+  margin-bottom: 1rem;
 }
 .article__info {
   background-color: #a3ddcb;
-  height: 20px;
+  height: 1rem;
 }
 .aside {
   background-color: #fd7b54;
-  height: 100%;
-  padding: 20px;
 }
 .aside__title {
   background-color: #fdb36b;
-  height: 20px;
-  margin-bottom: 20px;
+  height: 1rem;
+  margin-bottom: 1rem;
 }
 .aside__text {
   background-color: #fdb36b;
-  height: 20px;
+  height: 1rem;
 }
 
 .footer {
   background-color: #000;
-  width: 100%;
-  height: auto;
-  padding: 20px;
 }
 .footer__text {
   background-color: #fdc763;
-  height: 20px;
+  height: 1rem;
 }
 
-/* MEDIAQUERIES -----------*/
-
-/* TABLET -----------------*/
+/* TABLET ==========================*/
 
 @media all and (min-width: 768px) {
   .nav {
@@ -111,19 +83,16 @@
     align-items: center;
   }
   .logo {
-    width: auto;
-    margin-right: 20px;
+    margin-right: 1rem;
     margin-bottom: 0;
     flex-grow: 1;
   }
   .menu {
-    width: auto;
     margin-bottom: 0;
     flex-grow: 3;
   }
   .social {
-    width: auto;
-    margin-left: 20px;
+    margin-left: 1rem;
     flex-grow: 1;
   }
   .main {
@@ -131,18 +100,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    min-height: 20vh;
   }
   .articles {
     width: 100%;
-    min-height: 100%;
     background-color: #4e4e6a;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: space-between;
   }
   .article {
     width: 48%;
@@ -154,15 +119,13 @@
   }
   .aside {
     width: 100%;
-    height: auto;
     background-color: #f73f52;
   }
-  .aside__title {
-    background-color: #feea85;
-  }
+  .aside__title,
   .aside__text {
     background-color: #feea85;
   }
+
   .footer__text {
     background-color: #e6af2f;
   }
@@ -174,15 +137,15 @@
   .main {
     background-color: #000;
     flex-direction: row;
-    min-height: 15vh;
+    height: 15%;
   }
   .articles {
     margin-bottom: 0;
-    min-height: 15vh;
+    height: 100%;
   }
   .aside {
-    width: 36vw;
-    margin-left: 20px;
-    min-height: 15vh;
+    width: 36%;
+    margin-left: 1rem;
+    height: 100%;
   }
 }
