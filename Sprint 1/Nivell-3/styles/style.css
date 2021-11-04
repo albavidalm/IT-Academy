@@ -1,0 +1,29 @@
+a {
+  text-decoration: none;
+  color: #808080;
+}
+ul {
+  padding: 0;
+}
+li:hover,
+a:hover {
+  color: #ee7463;
+  transform: scale(1.1);
+  transition: all 0.4s ease 0.1s;
+}
+h1 {
+  margin: 0;
+}
+.page {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  color: #808080;
+  overflow-x: hidden;
+}
+.minipadding {
+  padding: 1rem;
+}
+.nav {
+  font-size: 0.7rem;
+}
