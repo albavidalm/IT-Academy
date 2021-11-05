@@ -1,21 +1,53 @@
-## Exercici 1
+# Exercice 1 / Replicate the image
 
-A partir del wireframe que t'aportem en format png, hauràs de fer la maquetació en format escriptori. És indiferent els colors escollits però si és molt important que facis l'estructura de caixes que t'indiquem.
+## Table of contents
 
-L'ample màxim de la capa que contindrà tota la maquetació serà de 1200px (max-width:1200px).
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Provided wireframes](#provided-wireframes)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Author](#author)
 
-![](images/Flex-desktop.png)
+## Overview
 
-## Exercici 2
+### The challenge
 
-Haurem de començar a preparar adaptació a diferents dispositius, pel que haurem de tenir clar el concepte de Media Query. Fixa't que hi ha canvi de distribució i color d'alguns elements.
+- From the wireframe provided in png, you will have to make the layout in responsive design for Mobile, Tablet and Desktop
+- It's very important that you make the box structure indicated.
+- The maximum layer's width that will contain all the layout will be 1200px (max-width: 1200px).
+- It's mandatory use Flexbox system.
 
-Seguint amb el projecte anterior, fes la versió tauleta tal com indica la captura següent:
-
-![](images/Flex-tablet.png)
-
-## Exercici 3
-
-Com el cas anterior, ara hauràs de fer l'adaptació a versió Mobile.
+### Provided wireframes
 
 ![](images/Flex-mobile.png)
+![](images/Flex-tablet.png)
+![](images/Flex-desktop.png)
+
+### Links
+
+- Code: [https://github1s.com/albavidalm/IT-Academy/blob/master/Sprint%201/Nivell-1/index.html](https://github1s.com/albavidalm/IT-Academy/blob/master/Sprint%201/Nivell-1/index.html)
+
+## My process
+
+### Built with
+
+- HTML5
+- CSS3
+- Flexbox
+
+### What I learned
+
+I refreshed my CSS skills mostly the right use of the absolut and relative units plus the Flexbox.
+
+## Author
+
+- GitHub: [https://github.com/albavidalm](https://github.com/albavidalm)
+- Email: [albavidalm @ gmail.com](mailto:albavidalm@gmail.com?subject=Hi)
+- Linkedin: [https://www.linkedin.com/in/albavidalm/](https://www.linkedin.com/in/albavidalm/)
+
+## 🖤 Support
+
+Sharing is caring, contributions and suggestions are always welcome.
