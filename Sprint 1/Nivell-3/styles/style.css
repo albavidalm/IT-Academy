@@ -67,6 +67,7 @@ h1 {
 }
 .nav__logo {
   justify-items: center;
+  animation: logo-in 3s ease 1s 1 normal both;
 }
 
 .nav__menu {
@@ -89,6 +90,7 @@ h1 {
   letter-spacing: 0.1rem;
   color: #ee7363ca;
   margin: 1.5rem 0;
+  animation: title-in 2s ease 0s 1 normal forwards;
 }
 
 .articles {
@@ -156,7 +158,42 @@ h1 {
   height: 100%;
   line-height: 3rem;
 }
+@keyframes title-in {
+  0% {
+    transform: scale(2);
+  }
 
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes logo-in {
+  0% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+  }
+
+  10% {
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
+  }
+
+  17% {
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
+  }
+
+  33% {
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
+  }
+
+  45% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+}
 /* TABLET -----------------*/
 
 @media all and (min-width: 768px) {
