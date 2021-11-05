@@ -1,19 +1,45 @@
-## Exercici 4
+# Exercice 3 / Replicate the image and code some animations
 
-En aquesta part volem treballar la capçalera i el grafisme. Hauràs d'afegir icones i logotip, a més de fer una imatge de fons. Substitueix els quadrants respectius perquè la nova capçalera tingui l'aspecte d'aquest web de turisme al japó:
+## Table of contents
 
-![](images/Web-resultat-header.png)
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Author](#author)
 
-**És important que tinguis en consideració el següent:**
+## Overview
 
-- Les opcions cliclables han de tenir efecte roll-over.
-- Els media query creats a l'activitat anterior, s'ha de mantenir.
-- El text "Disfruta..." és semitransparent.
-- El logo i el fons de la capçalera, els tens adjuntat a l'activitat. La resta d'elements gràfics els hauràs de cercar i que siguin el més semblants possibles.
-- Les icones del menú pots obtenir-los de font-awesome.
+### The challenge
 
-## Exercici 5
+- The goal is to use the grid layout properties to make the whole structure of the web and its different devices (always with Media Query)
+- To improve the user experience, apply on the main web elements, title and logo, animations using keyframes
 
-En aquest exercici hauràs d'afegir l'apartat dels articles seguint aquest grafisme:
+### Links
 
-![](images/Web-resultat-grafisme.png)
+- Code: [https://github1s.com/albavidalm/IT-Academy/blob/master/Sprint%201/Nivell-3/index.html](https://github1s.com/albavidalm/IT-Academy/blob/master/Sprint%201/Nivell-3/index.html)
+
+## My process
+
+### Built with
+
+- HTML5
+- CSS3
+- Grid
+- Keyframes
+
+### What I learned
+
+I refreshed my CSS skills mostly the right use of the absolut and relative units plus the Grid system.
+
+## Author
+
+- GitHub: [https://github.com/albavidalm](https://github.com/albavidalm)
+- Email: [albavidalm @ gmail.com](mailto:albavidalm@gmail.com?subject=Hi)
+- Linkedin: [https://www.linkedin.com/in/albavidalm/](https://www.linkedin.com/in/albavidalm/)
+
+## 🖤 Support
+
+Sharing is caring, contributions and suggestions are always welcome.
