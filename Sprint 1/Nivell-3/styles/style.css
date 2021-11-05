@@ -44,6 +44,7 @@ h1 {
   font-family: "Roboto", sans-serif;
   color: #808080;
   overflow-x: hidden;
+  animation: web-in 2.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
 }
 .container {
   max-width: 1200px;
@@ -67,7 +68,7 @@ h1 {
 }
 .nav__logo {
   justify-items: center;
-  animation: logo-in 3s ease 1s 1 normal both;
+  animation: logo-in 3s ease 1.5s 1 normal both;
 }
 
 .nav__menu {
@@ -90,7 +91,7 @@ h1 {
   letter-spacing: 0.1rem;
   color: #ee7363ca;
   margin: 1.5rem 0;
-  animation: title-in 2s ease 0s 1 normal forwards;
+  animation: title-in 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) 1.5s both;
 }
 
 .articles {
@@ -158,15 +159,33 @@ h1 {
   height: 100%;
   line-height: 3rem;
 }
-@keyframes title-in {
-  0% {
-    transform: scale(2);
-  }
 
+@keyframes web-in {
+  0% {
+    transform: rotateX(-100deg);
+    transform-origin: top;
+    opacity: 0;
+  }
   100% {
-    transform: scale(1);
+    transform: rotateX(0deg);
+    transform-origin: top;
+    opacity: 1;
   }
 }
+
+@keyframes title-in {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes logo-in {
   0% {
     animation-timing-function: ease-out;
