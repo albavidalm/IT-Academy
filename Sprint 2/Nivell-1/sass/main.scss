@@ -1,0 +1,55 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+$font-family-sans-serif: "Rubik", sans-serif;
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+$h1-font-size: $font-size-base * 2.7;
+
+$primary: #5265e1;
+$secondary: #fa5959;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+);
+
+$custom-font-sizes: (
+  7: $font-size-base * 0.85,
+);
+
+$custom-spacers: (
+  herotop: $spacer * 9,
+);
+.navbar {
+  width: 100%;
+}
+
+.navbar-toggler-icon {
+  background-image: url(../images/icon-hamburger.svg);
+}
+.menudown {
+  z-index: 3000;
+}
+
+.screen {
+  z-index: 2000;
+}
+.bg-form {
+  width: 80%;
+  z-index: 1000;
+}
+
+@media (min-width: 768px) {
+  .container-md {
+    height: 100vh;
+    width: 100%;
+  }
+}
+
+$spacers: map-merge($custom-spacers, $spacers);
+$font-sizes: map-merge($custom-font-sizes, $font-sizes);
+@import "../node_modules/bootstrap/scss/bootstrap";
