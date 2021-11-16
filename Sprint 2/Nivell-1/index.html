@@ -34,7 +34,7 @@
           <!-- Amb navbar-nav indiquem que són els elements de navegació de la barra -->
           <ul class="navbar-nav ms-3">
             <li class="nav-item mx-3">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#features">Features</a>
             </li>
             <li class="nav-item">
               <a class="nav-link " href="#">Pricing</a>
@@ -51,6 +51,8 @@
     </nav>
 
   </header>
+
+  <!-- HERO ----------------------------------------------------->
 
   <section class="hero mt-herotop mb-5">
 
@@ -75,78 +77,94 @@
   </section>
 
 
-  <!-- SECCIÓ FEATURES -->
-  <div class="container p-4 ">
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-9">
-        <h2 class="text-capitalize text-center">Features</h2>
-      </div>
+  <!-- CAPÇALERA FEATURES ---------------------------------------->
+  <section class="features" id="features">
+    <div class="container p-4">
       <div class="row justify-content-center">
-        <div class="col-12 col-md-8 mb-4">
-          <p class="text-center fs-7 text-muted mt-3">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+        <div class="col-12 col-md-9">
+          <h2 class="text-capitalize text-center">Features</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8">
+            <p class="text-center fs-7 text-muted mt-3">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+          </div>
         </div>
       </div>
-
-
-
-      <!-- <div class="container-md">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-          <li class=" nav-item">
-            <a class="nav-link active" href="#bookmarking" data-bs-toggle="tab">Bookmark in one click</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#searching" data-bs-toggle="tab">Speedy searching</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#sharing" data-bs-toggle="tab">Easy sharing</a>
-          </li>
-        </ul>
-
-        <div class="tab-content">
+    </div>
+    <!-- CAPÇALERA PESTANYES ------------------------------------------------->
+    <div class="container-md">
+      <ul class="nav nav-tabs d-flex flex-column flex-md-row align-items-center justify-content-md-around mb-4" id="myTab" role="tablist">
+        <li class="nav-item text-center">
+          <a class="my-tabs nav-link active" href="#bookmarking" data-bs-toggle="tab">Simple bookmarking</a>
+        </li>
+        <li class="nav-item text-center ">
+          <a class="my-tabs nav-link" href="#searching" data-bs-toggle="tab">Speedy searching</a>
+        </li>
+        <li class="nav-item text-center">
+          <a class="my-tabs nav-link" href="#sharing" data-bs-toggle="tab">Easy sharing</a>
+        </li>
+      </ul>
+      <!-- CONTINGUT PESTANYES ------------------------------------------------->
+      <div class="container-md">
+        <div class="tab-content justify-items-center">
           <div class="tab-pane active" id="bookmarking">
             <div class="row">
-              <div class="col-4">
-                <h3>Bookmark in one click</h3>
-                <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
-                <button class="btn btn-primary">More info</button>
+              <div class="col-12 col-md-6 position-relative">
+                <img class="bg-form img-fluid position-absolute top-5r start-m13" src="./images/bg-form-left.svg" alt="">
+                <img class="screen img-fluid position-relative" src="./images/illustration-features-tab-1.svg" alt="">
               </div>
-              <div class="col-8">
-                <img src="./images/illustration-features-tab-1.svg" alt="">
+              <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-md-center align-items-md-start mt-6 mt-md-0">
+                <h3 class="text-center text-md-start">Bookmark in one click</h3>
+                <p class="fs-7 text-muted text-center text-md-start">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+                <button class="btn btn-primary shadow w-50">More info</button>
               </div>
             </div>
           </div>
           <div class="tab-pane" id="searching">
             <div class="row">
-              <div class="col-12">
-                <h3>Intelligent search</h3>
-                <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
-                <button class="btn btn-primary">More info</button>
+              <div class="col-12 col-md-6 position-relative">
+                <img class="bg-form img-fluid position-absolute top-5r start-m13" src="./images/bg-form-left.svg" alt="">
+                <img class="screen img-fluid position-relative" src="./images/illustration-features-tab-2.svg" alt="">
               </div>
-              <div class="col-12">
-                <img src="./images/illustration-features-tab-2.svg" alt="">
+              <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-md-center align-items-md-start mt-4 mt-md-0">
+                <h3 class="text-center text-md-start">Intelligent search</h3>
+                <p class="fs-7 text-muted text-center text-md-start">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+                <button class="btn btn-primary shadow w-50">More info</button>
               </div>
             </div>
           </div>
           <div class="tab-pane" id="sharing">
             <div class="row">
-              <div class="col-12">
-                <h3>Share your bookmarks</h3>
-                <p>Easy share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
-                <button class="btn btn-primary">More info</button>
+              <div class="col-12 col-md-6 position-relative">
+                <img class="bg-form img-fluid position-absolute top-5r start-m13" src="./images/bg-form-left.svg" alt="">
+                <img class="screen img-fluid position-relative" src="./images/illustration-features-tab-3.svg" alt="">
               </div>
-              <div class="col-12">
-                <img src="./images/illustration-features-tab-3.svg" alt="">
+              <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-md-center align-items-md-start mt-4 mt-md-0">
+                <h3 class="text-center text-md-start">Share your bookmarks</h3>
+                <p class="fs-7 text-muted text-center text-md-start">Easy share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
+                <button class="btn btn-primary shadow w-50">More info</button>
               </div>
             </div>
           </div>
-        </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
 
 
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
 </body>
 

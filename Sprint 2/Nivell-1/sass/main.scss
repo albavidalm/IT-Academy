@@ -2,13 +2,16 @@
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 
+//FONTS _______________________________________
 $font-family-sans-serif: "Rubik", sans-serif;
-.navbar-collapse {
-  justify-content: flex-end;
-}
 
 $h1-font-size: $font-size-base * 2.7;
 
+$custom-font-sizes: (
+  7: $font-size-base * 0.85,
+);
+
+//COLORS _______________________________________
 $primary: #5265e1;
 $secondary: #fa5959;
 
@@ -17,17 +20,25 @@ $theme-colors: (
   "secondary": $secondary,
 );
 
-$custom-font-sizes: (
-  7: $font-size-base * 0.85,
-);
-
+//SIZE _______________________________________
 $custom-spacers: (
+  6: $spacer * 6.5,
   herotop: $spacer * 9,
 );
+
+$custom-position-values: (
+  m13: -13%,
+  30: 30%,
+  5r: 5.5rem,
+);
+
+//CUSTOM _______________________________________
 .navbar {
   width: 100%;
 }
-
+.navbar-collapse {
+  justify-content: flex-end;
+}
 .navbar-toggler-icon {
   background-image: url(../images/icon-hamburger.svg);
 }
@@ -43,6 +54,21 @@ $custom-spacers: (
   z-index: 1000;
 }
 
+//TAB COMPONENT _______________________________________
+$nav-link-color: $gray-600;
+$nav-link-hover-color: $secondary;
+$nav-tabs-link-active-border-color: transparent transparent $secondary
+  transparent;
+$nav-tabs-border-width: 3px;
+$nav-tabs-link-hover-border-color: transparent;
+
+//MQ _______________________________________
+@media (max-width: 767px) {
+  .my-tabs li {
+    width: 100%;
+  }
+}
+
 @media (min-width: 768px) {
   .container-md {
     height: 100vh;
@@ -52,4 +78,5 @@ $custom-spacers: (
 
 $spacers: map-merge($custom-spacers, $spacers);
 $font-sizes: map-merge($custom-font-sizes, $font-sizes);
+$position-values: map-merge($custom-position-values, $position-values);
 @import "../node_modules/bootstrap/scss/bootstrap";
