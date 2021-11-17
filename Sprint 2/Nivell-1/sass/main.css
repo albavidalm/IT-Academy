@@ -29,19 +29,16 @@
   width: 40%;
 }
 
+.accordion-button:hover {
+  color: #fa5959;
+}
+
 @media (max-width: 767px) {
   .my-tabs li {
     width: 100%;
   }
   .card {
     top: 0;
-  }
-}
-
-@media (min-width: 768px) {
-  .container-md {
-    height: 100vh;
-    width: 100%;
   }
 }
 
@@ -4903,8 +4900,8 @@ fieldset:disabled .btn {
 }
 
 .accordion-button:not(.collapsed) {
-  color: #0c63e4;
-  background-color: #e7f1ff;
+  color: #212529;
+  background-color: transparent;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
           box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
 }
@@ -4946,8 +4943,8 @@ fieldset:disabled .btn {
   z-index: 3;
   border-color: #86b7fe;
   outline: 0;
-  -webkit-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
-          box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .accordion-header {
