@@ -25,9 +25,16 @@
   z-index: 1000;
 }
 
+.logo {
+  width: 40%;
+}
+
 @media (max-width: 767px) {
   .my-tabs li {
     width: 100%;
+  }
+  .card {
+    top: 0;
   }
 }
 
@@ -4699,8 +4706,8 @@ fieldset:disabled .btn {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border: 0 solid rgba(0, 0, 0, 0.125);
+  border-radius: 1.5rem;
 }
 
 .card > hr {
@@ -4758,7 +4765,7 @@ fieldset:disabled .btn {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  border-bottom: 0 solid rgba(0, 0, 0, 0.125);
 }
 
 .card-header:first-child {
@@ -4768,7 +4775,7 @@ fieldset:disabled .btn {
 .card-footer {
   padding: 0.5rem 1rem;
   background-color: rgba(0, 0, 0, 0.03);
-  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  border-top: 0 solid rgba(0, 0, 0, 0.125);
 }
 
 .card-footer:last-child {
@@ -7140,6 +7147,14 @@ fieldset:disabled .btn {
   top: 30% !important;
 }
 
+.top-2r {
+  top: 2rem !important;
+}
+
+.top-4r {
+  top: 4rem !important;
+}
+
 .top-5r {
   top: 5.5rem !important;
 }
@@ -7162,6 +7177,14 @@ fieldset:disabled .btn {
 
 .bottom-30 {
   bottom: 30% !important;
+}
+
+.bottom-2r {
+  bottom: 2rem !important;
+}
+
+.bottom-4r {
+  bottom: 4rem !important;
 }
 
 .bottom-5r {
@@ -7188,6 +7211,14 @@ fieldset:disabled .btn {
   left: 30% !important;
 }
 
+.start-2r {
+  left: 2rem !important;
+}
+
+.start-4r {
+  left: 4rem !important;
+}
+
 .start-5r {
   left: 5.5rem !important;
 }
@@ -7210,6 +7241,14 @@ fieldset:disabled .btn {
 
 .end-30 {
   right: 30% !important;
+}
+
+.end-2r {
+  right: 2rem !important;
+}
+
+.end-4r {
+  right: 4rem !important;
 }
 
 .end-5r {

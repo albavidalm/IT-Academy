@@ -29,6 +29,8 @@ $custom-spacers: (
 $custom-position-values: (
   m13: -13%,
   30: 30%,
+  2r: 2rem,
+  4r: 4rem,
   5r: 5.5rem,
 );
 
@@ -62,10 +64,22 @@ $nav-tabs-link-active-border-color: transparent transparent $secondary
 $nav-tabs-border-width: 3px;
 $nav-tabs-link-hover-border-color: transparent;
 
+//CARD COMPONENT ______________________________________
+
+$card-border-width: 0;
+$card-border-radius: 1.5rem;
+
+.logo {
+  width: 40%;
+}
+
 //MQ _______________________________________
 @media (max-width: 767px) {
   .my-tabs li {
     width: 100%;
+  }
+  .card {
+    top: 0;
   }
 }
 
