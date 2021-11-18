@@ -10,13 +10,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
   <link rel="stylesheet" href="/sass/main.css">
 </head>
 
 <body>
 
   <header>
-    <nav class="navbar navbar-expand-md position-fixed top-0 p-4 bg-white menudown">
+    <nav class="navbar navbar-light navbar-expand-md position-fixed top-0 p-4 bg-white menudown">
       <div class="container justify-content-between p-0">
         <a class="navbar-brand" href="#"><img src="./images/logo-bookmark.svg" alt=""></a>
 
@@ -33,13 +34,13 @@
         <div class="collapse navbar-collapse navbar-light text-uppercase fs-7" id="navbarSupportedContent">
           <!-- Amb navbar-nav indiquem que són els elements de navegació de la barra -->
           <ul class="navbar-nav ms-3">
-            <li class="nav-item mx-3">
+            <li class="nav-item ">
               <a class="nav-link" href="#features">Features</a>
             </li>
             <li class="nav-item">
               <a class="nav-link " href="#">Pricing</a>
             </li>
-            <li class="nav-item mx-3">
+            <li class="nav-item ">
               <a class="nav-link" href="#">Contact</a>
             </li>
           </ul>
@@ -68,8 +69,9 @@
           <h1 class="mb-4 text-capitalize text-center text-md-start">A simple bookmark manager</h1>
           <p class="mb-5 mb-md-4 text-center text-md-start fs-7 text-muted">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
           <div class="d-flex justify-content-between justify-content-md-start">
-            <button class="btn btn-primary shadow p-3 fs-7 me-md-3">Get it on Chrome</button>
-            <button class="btn btn-light shadow p-3 fs-7">Get it on Firefox</button>
+            <button class="btn btn-primary shadow fs-7 me-md-3">Get it on Chrome</button>
+            <button class="btn btn-light shadow fs-7">Get it on Firefox</button>
+
           </div>
         </div>
       </div>
@@ -93,14 +95,14 @@
     </div>
     <!-- CAPÇALERA PESTANYES ------------------------------------------------->
     <div class="container">
-      <ul class="nav nav-tabs d-flex flex-column flex-md-row align-items-center justify-content-md-around mb-4" id="myTab" role="tablist">
-        <li class="nav-item text-center">
+      <ul class="nav nav-tabs d-flex flex-column flex-md-row align-items-center justify-content-md-around mb-4 mb-md-5" id="myTab" role="tablist">
+        <li class="nav-item text-center text-capitalize">
           <a class="my-tabs nav-link active" href="#bookmarking" data-bs-toggle="tab">Simple bookmarking</a>
         </li>
-        <li class="nav-item text-center ">
+        <li class="nav-item text-center text-capitalize">
           <a class="my-tabs nav-link" href="#searching" data-bs-toggle="tab">Speedy searching</a>
         </li>
-        <li class="nav-item text-center">
+        <li class="nav-item text-center text-capitalize">
           <a class="my-tabs nav-link" href="#sharing" data-bs-toggle="tab">Easy sharing</a>
         </li>
       </ul>
@@ -116,7 +118,7 @@
               <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-md-center align-items-md-start mt-6 mt-md-0">
                 <h3 class="text-center text-md-start">Bookmark in one click</h3>
                 <p class="fs-7 text-muted text-center text-md-start">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
-                <button class="btn btn-primary shadow w-50">More info</button>
+                <button class="btn btn-primary shadow fs-7">More info</button>
               </div>
             </div>
           </div>
@@ -129,7 +131,7 @@
               <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-md-center align-items-md-start mt-4 mt-md-0">
                 <h3 class="text-center text-md-start">Intelligent search</h3>
                 <p class="fs-7 text-muted text-center text-md-start">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
-                <button class="btn btn-primary shadow w-50">More info</button>
+                <button class="btn btn-primary shadow fs-7">More info</button>
               </div>
             </div>
           </div>
@@ -142,7 +144,7 @@
               <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-md-center align-items-md-start mt-4 mt-md-0">
                 <h3 class="text-center text-md-start">Share your bookmarks</h3>
                 <p class="fs-7 text-muted text-center text-md-start">Easy share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
-                <button class="btn btn-primary shadow w-50">More info</button>
+                <button class="btn btn-primary shadow fs-7">More info</button>
               </div>
             </div>
           </div>
@@ -174,9 +176,9 @@
         <img src="./images/logo-chrome.svg" class="logo pt-5 pb-3" alt="">
         <div class="card-body d-flex flex-column align-items-center">
           <h5 class="card-title">Add to Chrome</h5>
-          <p class="card-text pb-4">Minimum version 62</p>
+          <p class="card-text fs-7 text-muted pb-4">Minimum version 62</p>
           <img src="./images/bg-dots.svg" alt="" class="img-fluid w-100 pb-4">
-          <button class="btn btn-primary shadow text-capitalize w-100 px-0">Add & install extension</button>
+          <button class="btn btn-primary shadow text-capitalize w-100 px-0 fs-7 py-2">Add & install extension</button>
         </div>
       </div>
 
@@ -184,9 +186,9 @@
         <img src="./images/logo-firefox.svg" class="logo pt-5 pb-3" alt="">
         <div class="card-body d-flex flex-column align-items-center">
           <h5 class="card-title">Add to Firefox</h5>
-          <p class="card-text pb-4">Minimum version 55</p>
+          <p class="card-text fs-7 text-muted pb-4">Minimum version 55</p>
           <img src="./images/bg-dots.svg" alt="" class="img-fluid w-100 pb-4">
-          <button class="btn btn-primary shadow text-capitalize w-100 px-0">Add & install extension</button>
+          <button class="btn btn-primary shadow text-capitalize w-100 px-0 fs-7 py-2">Add & install extension</button>
         </div>
       </div>
 
@@ -194,16 +196,16 @@
         <img src="./images/logo-opera.svg" class="logo pt-5 pb-3" alt="">
         <div class="card-body d-flex flex-column align-items-center">
           <h5 class="card-title">Add to Opera</h5>
-          <p class="card-text pb-4">Minimum version 46</p>
+          <p class="card-text fs-7 text-muted pb-4">Minimum version 46</p>
           <img src="./images/bg-dots.svg" alt="" class="img-fluid w-100 pb-4">
-          <button class="btn btn-primary shadow text-capitalize w-100 px-0">Add & install extension</button>
+          <button class="btn btn-primary shadow text-capitalize w-100 px-0 fs-7 py-2">Add & install extension</button>
         </div>
       </div>
     </div>
   </section>
 
   <!-- FAQ --------------------------->
-  <section class="container-md mt-herotop d-flex flex-column align-items-center mb-4" id="FAQ">
+  <section class="container-md mt-herotop d-flex flex-column align-items-center mb-herotop" id="FAQ">
     <div class="container p-4">
       <div class="row justify-content-center">
         <div class="col-12 col-md-9">
@@ -264,17 +266,95 @@
         </div>
       </div>
     </div>
-
-    <button class="btn btn-primary shadow">More info</button>
+    <button class="btn btn-primary shadow fs-7">More info</button>
   </section>
 
+  <!-- FOOTER FORMULARI--------------------->
+  <footer class="bg-primary pt-5">
+    <section class="container-md d-flex flex-column align-items-center pb-4">
+
+      <form class="container p-4 needs-validation" novalidate>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-9">
+            <p class="fs-7 text-white text-uppercase text-center">35.000+ Already joined</p>
+            <h2 class="text-white text-center mb-5">Stay up-to-date with what we're doing</h2>
+
+            <div class="d-flex flex-column flex-md-row position-relative">
+              <label for="exampleInputEmail1" class="form-label"></label>
+
+              <input type="email" class="form-control mb-3 mb-md-0 me-md-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address" required>
+              <div class="valid-tooltip">Nice address!</div>
+              <div class="invalid-tooltip">Whoops, make sure it's an email</div>
 
 
+              <button type="submit" class="fs-7 btn btn-secondary text-capitalize text-white w-100">Contact us</button>
+
+
+            </div>
+
+          </div>
+        </div>
+      </form>
+    </section>
+
+
+    <!-- FOOTER PEU--------------------->
+
+
+    <nav class="navbar navbar-dark bg-navy navbar-expand-md p-4 ">
+      <div class="container justify-content-between p-0 d-flex flex-column flex-md-row">
+        <a class="navbar-brand" href="#"><img src="./images/logo-bookmark-dark.svg" alt=""></a>
+
+        <ul class="navbar-nav ms-3 text-uppercase fs-7">
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+
+        <ul class="nav col-md-4 d-flex justify-content-space-between justify-content-md-end list-unstyled">
+
+          <li class="ms-3"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+          <li class="ms-3"><a class="" href="#"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+
+
+
+
+      </div>
+    </nav>
+  </footer>
 
 
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <script>
+    (function () {
+      'use strict'
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.querySelectorAll('.needs-validation')
+
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            } else {
+              alert("VALIDATED DATA.  (This is a simulation)")
+            }
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()</script>
 
 </body>
 

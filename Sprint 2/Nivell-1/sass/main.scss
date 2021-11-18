@@ -4,9 +4,7 @@
 
 //FONTS _______________________________________
 $font-family-sans-serif: "Rubik", sans-serif;
-
 $h1-font-size: $font-size-base * 2.7;
-
 $custom-font-sizes: (
   7: $font-size-base * 0.85,
 );
@@ -14,6 +12,11 @@ $custom-font-sizes: (
 //COLORS _______________________________________
 $primary: #5265e1;
 $secondary: #fa5959;
+$navy: #242946;
+
+$custom-colors: (
+  "navy": $navy,
+);
 
 $theme-colors: (
   "primary": $primary,
@@ -34,7 +37,7 @@ $custom-position-values: (
   5r: 5.5rem,
 );
 
-//CUSTOM _______________________________________
+//NAVBAR _______________________________________
 .navbar {
   width: 100%;
 }
@@ -48,6 +51,13 @@ $custom-position-values: (
   z-index: 3000;
 }
 
+$navbar-light-hover-color: $secondary;
+$navbar-dark-color: $white;
+$navbar-dark-hover-color: $secondary;
+$link-color: $white;
+$link-hover-color: $secondary;
+
+//HERO _________________________________________
 .screen {
   z-index: 2000;
 }
@@ -58,7 +68,7 @@ $custom-position-values: (
 
 //TAB COMPONENT _______________________________________
 $nav-link-color: $gray-600;
-$nav-link-hover-color: $secondary;
+$navbar-light-brand-hover-color: $secondary;
 $nav-tabs-link-active-border-color: transparent transparent $secondary
   transparent;
 $nav-tabs-border-width: 3px;
@@ -88,7 +98,7 @@ $accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/20
 $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
 
 //MQ _______________________________________
-@media (max-width: 767px,) {
+@media (max-width: 767px) {
   .my-tabs li {
     width: 100%;
   }
@@ -97,6 +107,24 @@ $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3
   }
 }
 
+$theme-colors: map-merge($theme-colors, $custom-colors);
+$theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
+$utilities-colors: map-merge(
+  $theme-colors-rgb,
+  (
+    "black": to-rgb($black),
+    "white": to-rgb($white),
+    "body": to-rgb($body-color),
+  )
+);
+
+$utilities-text-colors: map-loop(
+  $utilities-colors,
+  rgba-css-var,
+  "$key",
+  "text"
+);
+$utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
 $spacers: map-merge($custom-spacers, $spacers);
 $font-sizes: map-merge($custom-font-sizes, $font-sizes);
 $position-values: map-merge($custom-position-values, $position-values);
