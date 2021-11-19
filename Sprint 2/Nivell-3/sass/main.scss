@@ -85,6 +85,12 @@ $card-border-radius: 1.5rem;
   width: 40%;
 }
 
+@for $i from 2 through 3 {
+  .card:nth-child(#{$i}) {
+    top: 1rem + $i - 2;
+  }
+}
+
 //ACCORDION COMPONENT ______________________________________
 $accordion-button-active-bg: transparent;
 $accordion-button-active-color: $body-color;

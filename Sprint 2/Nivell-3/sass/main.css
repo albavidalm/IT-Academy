@@ -29,6 +29,14 @@
   width: 40%;
 }
 
+.card:nth-child(2) {
+  top: 1rem;
+}
+
+.card:nth-child(3) {
+  top: 2rem;
+}
+
 .accordion-button:hover {
   color: #fa5959;
 }
